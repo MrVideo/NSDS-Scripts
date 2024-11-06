@@ -38,8 +38,7 @@ if [ $# -ge 1 ]; then
 	if [ $? -eq 0 ]; then
 		echo "Worker started successfully."
 	else
-		echo "Unable to start worker."
-		exit 1
+		echo "Worker already running."
 	fi
 
 	echo "Submitting application..."
